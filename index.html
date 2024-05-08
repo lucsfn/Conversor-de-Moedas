@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moedas</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1>Conversor de Moedas</h1>
+
+    <form id="conversor-form">
+        <label for="valor">Digite o valor:</label>
+        <input type="number" id="valor" name="valor" min="0.000" max="999999999" autofocus required>
+        <label for="moeda-origem">Moeda de Origem:</label>
+        <select id="moeda-origem" name="moeda-origem" required>
+            <option value="">Selecione a moeda de origem</option>
+            <option value="BRL">Real Brasileiro (BRL)</option>
+            <option value="USD">Dólar Americano (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="ARS">Peso Argentino (ARS)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="CNY">Yuan Renminbi (CNY)</option>
+            <!-- Adicione outras moedas conforme necessário -->
+        </select>
+    
+        <label for="moeda-destino">Moeda de Destino:</label>
+        <select id="moeda-destino" name="moeda-destino" required>
+            <option value="">Selecione a moeda de destino</option>
+            <option value="BRL">Real Brasileiro (BRL)</option>
+            <option value="USD">Dólar Americano (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="ARS">Peso Argentino (ARS)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="CNY">Yuan Renminbi (CNY)</option>
+            <!-- Adicione outras moedas conforme necessário -->
+        </select>
+    
+        <button type="button" id="btn">Converter</button>
+    </form>
+    
+    <p id="resultado"></p>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
